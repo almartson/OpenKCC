@@ -1,0 +1,574 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SimplifiedKCC
+   | OpenKCC Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SimplifiedKCC
+   | OpenKCC Documentation ">
+    <meta name="generator" content="docfx 2.59.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="nickmaltbie.OpenKCC.Demo.SimplifiedKCC">
+  
+  
+  <h1 id="nickmaltbie_OpenKCC_Demo_SimplifiedKCC" data-uid="nickmaltbie.OpenKCC.Demo.SimplifiedKCC" class="text-break">Class SimplifiedKCC
+  </h1>
+  <div class="markdown level0 summary"><p>Example of the KCC class with a simplified movement script for learning purposes.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">SimplifiedKCC</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="nickmaltbie.OpenKCC.Demo.html">nickmaltbie.OpenKCC.Demo</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="nickmaltbie_OpenKCC_Demo_SimplifiedKCC_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SimplifiedKCC : MonoBehaviour</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="nickmaltbie_OpenKCC_Demo_SimplifiedKCC_anglePower" data-uid="nickmaltbie.OpenKCC.Demo.SimplifiedKCC.anglePower">anglePower</h4>
+  <div class="markdown level1 summary"><p>Decrease in momentum factor due to angle change when walking.
+Should be a positive float value. It&apos;s an exponential applied to 
+values between [0, 1] so values smaller than 1 create a positive
+curve and grater than 1 for a negative curve.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float anglePower</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="nickmaltbie_OpenKCC_Demo_SimplifiedKCC_cameraTransform" data-uid="nickmaltbie.OpenKCC.Demo.SimplifiedKCC.cameraTransform">cameraTransform</h4>
+  <div class="markdown level1 summary"><p>Transform holding camera position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform cameraTransform</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Transform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="nickmaltbie_OpenKCC_Demo_SimplifiedKCC_gravity" data-uid="nickmaltbie.OpenKCC.Demo.SimplifiedKCC.gravity">gravity</h4>
+  <div class="markdown level1 summary"><p>Speed at which the player falls.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 gravity</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="nickmaltbie_OpenKCC_Demo_SimplifiedKCC_groundDist" data-uid="nickmaltbie.OpenKCC.Demo.SimplifiedKCC.groundDist">groundDist</h4>
+  <div class="markdown level1 summary"><p>Distance at which the player is considered grounded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float groundDist</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="nickmaltbie_OpenKCC_Demo_SimplifiedKCC_lookAround" data-uid="nickmaltbie.OpenKCC.Demo.SimplifiedKCC.lookAround">lookAround</h4>
+  <div class="markdown level1 summary"><p>Action realted to moving the camera, should be a two component vector.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InputActionReference lookAround</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">InputActionReference</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="nickmaltbie_OpenKCC_Demo_SimplifiedKCC_maxBounces" data-uid="nickmaltbie.OpenKCC.Demo.SimplifiedKCC.maxBounces">maxBounces</h4>
+  <div class="markdown level1 summary"><p>Maximum number of bounces when moving the player.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int maxBounces</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="nickmaltbie_OpenKCC_Demo_SimplifiedKCC_maxPitch" data-uid="nickmaltbie.OpenKCC.Demo.SimplifiedKCC.maxPitch">maxPitch</h4>
+  <div class="markdown level1 summary"><p>Maximum pitch for camera movement.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float maxPitch = 90F</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="nickmaltbie_OpenKCC_Demo_SimplifiedKCC_maxWalkingAngle" data-uid="nickmaltbie.OpenKCC.Demo.SimplifiedKCC.maxWalkingAngle">maxWalkingAngle</h4>
+  <div class="markdown level1 summary"><p>Max angle at which the player can walk.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float maxWalkingAngle</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="nickmaltbie_OpenKCC_Demo_SimplifiedKCC_minPitch" data-uid="nickmaltbie.OpenKCC.Demo.SimplifiedKCC.minPitch">minPitch</h4>
+  <div class="markdown level1 summary"><p>Minimum pitch for camera movement.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float minPitch = -90F</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="nickmaltbie_OpenKCC_Demo_SimplifiedKCC_movePlayer" data-uid="nickmaltbie.OpenKCC.Demo.SimplifiedKCC.movePlayer">movePlayer</h4>
+  <div class="markdown level1 summary"><p>Action realted to moving the player, should be a two component vector.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InputActionReference movePlayer</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">InputActionReference</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="nickmaltbie_OpenKCC_Demo_SimplifiedKCC_moveSpeed" data-uid="nickmaltbie.OpenKCC.Demo.SimplifiedKCC.moveSpeed">moveSpeed</h4>
+  <div class="markdown level1 summary"><p>Player movement speed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float moveSpeed</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="nickmaltbie_OpenKCC_Demo_SimplifiedKCC_rotateSpeed" data-uid="nickmaltbie.OpenKCC.Demo.SimplifiedKCC.rotateSpeed">rotateSpeed</h4>
+  <div class="markdown level1 summary"><p>How fast the player can rotate in degrees per second.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float rotateSpeed</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="nickmaltbie_OpenKCC_Demo_SimplifiedKCC_CastSelf_" data-uid="nickmaltbie.OpenKCC.Demo.SimplifiedKCC.CastSelf*"></a>
+  <h4 id="nickmaltbie_OpenKCC_Demo_SimplifiedKCC_CastSelf_Vector3_Quaternion_Vector3_System_Single_RaycastHit__" data-uid="nickmaltbie.OpenKCC.Demo.SimplifiedKCC.CastSelf(Vector3,Quaternion,Vector3,System.Single,RaycastHit@)">CastSelf(Vector3, Quaternion, Vector3, Single, out RaycastHit)</h4>
+  <div class="markdown level1 summary"><p>Cast self in a given direction and get the first object hit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CastSelf(Vector3 pos, Quaternion rot, Vector3 dir, float dist, out RaycastHit hit)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Quaternion</span></td>
+        <td><span class="parametername">rot</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">dir</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">dist</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">RaycastHit</span></td>
+        <td><span class="parametername">hit</span></td>
+        <td><p>First object hit and related information, will have a distance of Mathf.Infinity if none
+is found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>True if an object is hit within distance, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="nickmaltbie_OpenKCC_Demo_SimplifiedKCC_MovePlayer_" data-uid="nickmaltbie.OpenKCC.Demo.SimplifiedKCC.MovePlayer*"></a>
+  <h4 id="nickmaltbie_OpenKCC_Demo_SimplifiedKCC_MovePlayer_Vector3_" data-uid="nickmaltbie.OpenKCC.Demo.SimplifiedKCC.MovePlayer(Vector3)">MovePlayer(Vector3)</h4>
+  <div class="markdown level1 summary"><p>Move the player with a bounce and slide motion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 MovePlayer(Vector3 movement)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">movement</span></td>
+        <td><p>Movement of the player.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><p>Final position of player after moving and bouncing.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="nickmaltbie_OpenKCC_Demo_SimplifiedKCC_Start_" data-uid="nickmaltbie.OpenKCC.Demo.SimplifiedKCC.Start*"></a>
+  <h4 id="nickmaltbie_OpenKCC_Demo_SimplifiedKCC_Start" data-uid="nickmaltbie.OpenKCC.Demo.SimplifiedKCC.Start">Start()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Start()</code></pre>
+  </div>
+  
+  
+  <a id="nickmaltbie_OpenKCC_Demo_SimplifiedKCC_Update_" data-uid="nickmaltbie.OpenKCC.Demo.SimplifiedKCC.Update*"></a>
+  <h4 id="nickmaltbie_OpenKCC_Demo_SimplifiedKCC_Update" data-uid="nickmaltbie.OpenKCC.Demo.SimplifiedKCC.Update">Update()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Update()</code></pre>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            OpenKCC Documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
